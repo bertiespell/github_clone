@@ -5,7 +5,7 @@ import Nav from './Nav';
 const Home = React.createClass({
   render: function () {
     return (
-      <div>
+      <div className='home'>
         <Nav />
         {this.props.children}
       </div>

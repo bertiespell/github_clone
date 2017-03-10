@@ -24,11 +24,11 @@ const User = React.createClass({
     },
     render: function () {
         return (
-            <div>
-                <h1>{this.state.username}</h1>
+            <div className='indent'>
+                <h1 className="user-name">{this.state.username}</h1>
                 <ul>
                     {this.state.repos.map((repo) => {
-                        return <li><Link to={'people/' + this.state.username + '/' + repo.name}>{repo.name}</Link>
+                        return <li  className="box indent"><Link to={'people/' + this.state.username + '/' + repo.name}>{repo.name}</Link>
                             <p><span>{repo.language}</span>
                                 <span>{repo.forks}</span>
                                 <span>{repo.created_at}</span>

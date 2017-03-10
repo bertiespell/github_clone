@@ -33,12 +33,12 @@ const Repositories = React.createClass({
   },
   render: function () {
     return (
-      <div className="home">
+      <div className="indent">
         {this.props.children}
 
         <ul>
           {this.state.repositories.map((repo)=> {
-            return <li><Link to={'/people/' + this.state.orgName + '/' + repo.name}>{repo.name}
+            return <li className='box'><Link to={'/people/' + this.state.orgName + '/' + repo.name}>{repo.name}
             </Link>
               <p><span>{repo.language}</span>
                 <span>{repo.forks}</span>

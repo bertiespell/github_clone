@@ -24,12 +24,10 @@ const People = React.createClass({
     render: function () {
         return (
             <div>
-                <h1>People</h1>
-
                 <ul>
                     {this.state.users.map(function (user) {
-                        return <li>
-                            <span><img src={user.avatar_url} alt="Loading..."/></span>
+                        return <li className='user-card'>
+                            <span><img src={user.avatar_url} alt="Loading..." className="user-img"/></span>
                             <Link to={'/people/' + user.login}>
                             <span>{user.login} </span>
                             </Link>
