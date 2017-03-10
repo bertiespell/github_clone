@@ -1,3 +1,13 @@
 body {
     font-family: 'Tahoma', sans-serif;
 }
+
+#header {
+    background-color: black;
+}
+
+#avatar {
+    background-color: white;
+    height: 50px;
+    border-radius: 5px;
+}
