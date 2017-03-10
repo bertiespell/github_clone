@@ -1,5 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router';
+import './main.css';
+import 'bulma/css/bulma.css'
+
 
 const red = {
     color: 'red'

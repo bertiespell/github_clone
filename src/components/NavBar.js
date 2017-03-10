@@ -1,12 +1,18 @@
 import React from 'react';
-import {Link} from 'react-router';
+import './main.css';
+import 'bulma/css/bulma.css'
+import '../../node_modules/font-awesome/css/font-awesome.css'
+
+
 
 
 function NavBar (){
     return (
-        <div>
-            <h1>NAVBAR!!</h1>
+        <nav className='nav'>
+            <div className="nav-left">
+                <a className="nav-item"><i className='fa fa-github' aria-hidden="true"></i></a>
             </div>
+        </nav>
     );
 }
 

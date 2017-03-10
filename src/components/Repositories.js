@@ -3,6 +3,9 @@ import Nav from './Nav';
 import { Link } from 'react-router';
 import axios from 'axios';
 const URL = 'https://northcoderssprint-github-elaycqpgip.now.sh';
+import './main.css';
+import 'bulma/css/bulma.css'
+
 
 const Repositories = React.createClass({
   getInitialState: function () {

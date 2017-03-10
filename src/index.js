@@ -9,6 +9,8 @@ import User from './components/User';
 import UserRepo from './components/UserRepo';
 import App from './components/app';
 import Home from './components/Home';
+import './components/main.css';
+import 'bulma/css/bulma.css'
 
 ReactDOM.render(
     <Router history={hashHistory}>

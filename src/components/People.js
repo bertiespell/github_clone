@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router'
 import axios from 'axios';
 const URL = 'https://northcoderssprint-github-elaycqpgip.now.sh';
+import './main.css';
+import 'bulma/css/bulma.css'
+
 
 const People = React.createClass({
     getInitialState: function () {
