@@ -10,7 +10,7 @@ function Nav (props){
       <nav>
           <ul>
               <li>
-                  <Link to='/' activeStyle={red} onlyActiveOnIndex>Repositories</Link>
+                  <Link to='/repositories' activeStyle={red} onlyActiveOnIndex>Repositories</Link>
               </li>
               <li>
                   <Link to='/people' activeStyle={red}>People</Link>

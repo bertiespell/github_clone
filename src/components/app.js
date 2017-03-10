@@ -1,10 +1,14 @@
 const React = require('react');
 require('./main.css');
+import Nav from './Nav';
 
 const App = React.createClass({
   render: function () {
     return (
-      <h1>Hello World</h1>
+      <div>
+        <Nav />
+      {this.props.children}
+      </div>
     );
   }
 });

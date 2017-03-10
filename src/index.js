@@ -7,12 +7,13 @@ import Teams from './components/Teams';
 import Projects from './components/Projects';
 import User from './components/User';
 import UserRepo from './components/UserRepo';
-
-// import App from './components/App';
+import App from './components/app';
 
 ReactDOM.render(
     <Router history={hashHistory}>
-        <Route path='/' component={Repositories}>
+        <Route path='/' component={App}>
+        <IndexRoute component={Repositories}/>
+        <Route path='/repositories' component={Repositories}> </Route>
             <Route path='/people' component={People}></Route>
             <Route path='/teams' component={Teams}></Route>
             <Route path='/projects' component={Projects}></Route>
