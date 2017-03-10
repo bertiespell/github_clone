@@ -1,16 +1,16 @@
 const React = require('react');
 require('./main.css');
-import NavBar from './NavBar';
+import Nav from './Nav';
 
-const App = React.createClass({
+const Home = React.createClass({
   render: function () {
     return (
       <div>
-        <NavBar />
+        <Nav />
         {this.props.children}
       </div>
     );
   }
 });
 
-export default App;
+export default Home;
